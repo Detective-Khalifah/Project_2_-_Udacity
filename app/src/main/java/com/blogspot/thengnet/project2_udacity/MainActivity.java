@@ -1,8 +1,8 @@
 package com.blogspot.thengnet.project2_udacity;
 
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -10,11 +10,15 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     private int[] checkBoxId = {R.id.cb0_a, R.id.cb0_b, R.id.cb0_c, R.id.cb0_d, R.id.cb1_a,
             R.id.cb1_b, R.id.cb1_c};
     private int trav = 0;
+    ArrayList<Byte> ops;
 
     private Button btnSubmit;
     private CheckBox cb0A, cb0B, cb0C, cb0D, // CheckBoxes for #Question 1
@@ -33,10 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
         editCurrentLang = (EditText) findViewById(R.id.edit_lang);
 
-        // Pick CheckBox from array and assign ID from list of CheckBox Ids
-        for (CheckBox checkBox : checkboxes) {
-            checkBox = (CheckBox) findViewById(checkBoxId[trav]);
-            trav++;
+        // Pick {@link CheckBox} from array and assign ID from array of #checkBoxIds
+        for (int i = 0; i < checkboxes.length; i++) {
+            checkboxes[i] = (CheckBox) findViewById(checkBoxId[i]);
         }
 
         radGrp0 = (RadioGroup) findViewById(R.id.rad_grp_lang);
@@ -47,9 +50,37 @@ public class MainActivity extends AppCompatActivity {
         tvWarn3 = (TextView) findViewById(R.id.q3_warning);
         tvWarn4 = (TextView) findViewById(R.id.q4_warning);
         tvWarn5 = (TextView) findViewById(R.id.q5_warning);
+
+        setupOptions();
     }
 
-    private boolean allQuestionsAnswered() {
+    private void setupOptions() {
+        String[] q1Options = new String[]{getString(R.string.q1_op0), getString(R.string.q1_op1),
+                getString(R.string.q1_op2), getString(R.string.q1_op3)};
+
+        ops = new ArrayList<>();
+
+        for (int i = 0; i < 4; i++) {
+            checkboxes[i].setText(q1Options[randomOptionPicker(4)]);
+        }
+    }
+
+    private byte randomOptionPicker(int size) {
+        Random ra = new Random();
+        byte shuffle = (byte) ra.nextInt(size);
+
+        for (int decker = 0; decker < size; decker++) {
+            if (!ops.contains(shuffle)) {
+                ops.add(decker, shuffle);
+                break;
+            } else {
+                return randomOptionPicker(size);
+            }
+        }
+        return shuffle;
+    }
+
+    private boolean allQuestionsAnswered () {
         boolean questionUnanswered = false;
 
         // TODO: Make any of the checks return false - as method return value - immediately a Q is
