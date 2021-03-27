@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
     private int[] checkBoxId = {R.id.cb0_a, R.id.cb0_b, R.id.cb0_c, R.id.cb0_d, R.id.cb1_a,
             R.id.cb1_b, R.id.cb1_c};
-    private int trav = 0;
+    private int[] radioButtonId = {R.id.rb0_a, R.id.rb0_b, R.id.rb0_c, R.id.rb0_d, R.id.rb1_a,
+            R.id.rb1_b, R.id.rb1_c};
     ArrayList<Byte> ops;
 
     private CheckBox cb0A, cb0B, cb0C, cb0D, // CheckBoxes for #Question 1
