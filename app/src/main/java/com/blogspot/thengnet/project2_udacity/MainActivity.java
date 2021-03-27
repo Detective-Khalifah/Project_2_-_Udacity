@@ -68,12 +68,23 @@ public class MainActivity extends AppCompatActivity {
         String[] q2Options = {getString(R.string.q2_op0), getString(R.string.q2_op1),
                 getString(R.string.q2_op2), getString(R.string.q2_op3)};
 
-        ops = new ArrayList<>();
+        String[] q4Options = {getString(R.string.q4_op0), getString(R.string.q4_op1),
+                getString(R.string.q4_op2)};
+        String[] q5Options = {getString(R.string.q5_op0), getString(R.string.q5_op1),
+                getString(R.string.q5_op2)};
 
+        ops = new ArrayList<>();
         for (int a = 0; a < 4; a++) {
             byte pick = randomOptionPicker(4);
             checkBoxOptions[a].setText(q1Options[pick]);
             radioButtonOptions[a].setText(q2Options[pick]);
+        }
+
+        ops = new ArrayList<>();
+        for (int b = 4; b < 7; b++) {
+            byte pick = randomOptionPicker(3);
+            checkBoxOptions[b].setText(q4Options[pick]);
+            radioButtonOptions[b].setText(q5Options[pick]);
         }
     }
 
