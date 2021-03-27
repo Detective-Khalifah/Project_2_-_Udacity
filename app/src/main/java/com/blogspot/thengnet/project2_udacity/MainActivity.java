@@ -1,14 +1,12 @@
 package com.blogspot.thengnet.project2_udacity;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioGroup;
-
-import java.util.ArrayList;
-import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,5 +38,35 @@ public class MainActivity extends AppCompatActivity {
 
         radGrp0 = (RadioGroup) findViewById(R.id.rad_grp_lang);
         radGrp1 = (RadioGroup) findViewById(R.id.rad_grp_ide);
+    }
+
+    private boolean allQuestionsAnswered() {
+        if (radGrp0.getCheckedRadioButtonId() == -1) {
+
+            return false;
+        }
+
+        if (radGrp1.getCheckedRadioButtonId() == -1) {
+
+            return false;
+        }
+
+        if (editCurrentLang.getText().toString().equals("")) {
+            editCurrentLang.setHint(getText(R.string.edit_empty));
+            editCurrentLang.setHintTextColor(Color.RED);
+            return false;
+        }
+
+        for (int cb0 = 0; cb0 < 4; cb0++) {
+            if (!checkboxes[cb0].isChecked())
+                return false;
+        }
+
+        for (int cb1 = 4; cb1 < checkboxes.length; cb1++) {
+            if (!checkboxes[cb1].isChecked())
+                return false;
+        }
+
+        return true;
     }
 }
