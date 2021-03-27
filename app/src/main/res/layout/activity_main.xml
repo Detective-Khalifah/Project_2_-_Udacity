@@ -29,7 +29,7 @@
             android:paddingStart="8dp"
             android:paddingLeft="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            tools:text="..."/>
+            tools:text="..." />
 
         <CheckBox
             android:id="@+id/cb0_b"
@@ -79,7 +79,7 @@
                 android:fontFamily="sans-serif-condensed-light"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="#006064"
-                tools:text="HTML"/>
+                tools:text="HTML" />
 
             <RadioButton
                 android:layout_width="match_parent"
@@ -123,7 +123,7 @@
             android:hint="@string/edit_lang_hint"
             android:singleLine="true"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            tools:text="J/K"/>
+            tools:text="J/K" />
 
 
         <!-- Question 4-->
@@ -143,7 +143,7 @@
             android:paddingStart="8dp"
             android:paddingLeft="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            tools:text="J2ME"/>
+            tools:text="J2ME" />
 
         <CheckBox
             android:id="@+id/cb1_c"
@@ -152,7 +152,7 @@
             android:paddingStart="8dp"
             android:paddingLeft="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            tools:text="Linux"/>
+            tools:text="Linux" />
 
         <CheckBox
             android:id="@+id/cb1_b"
@@ -161,7 +161,7 @@
             android:paddingStart="8dp"
             android:paddingLeft="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            tools:text="Mac"/>
+            tools:text="Mac" />
 
         <!-- Question 5-->
         <TextView
@@ -207,7 +207,8 @@
             android:id="@+id/btn_submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/btn_submit_text"/>
+            android:text="@string/btn_submit_text" />
+
     </LinearLayout>
 
 </ScrollView>
