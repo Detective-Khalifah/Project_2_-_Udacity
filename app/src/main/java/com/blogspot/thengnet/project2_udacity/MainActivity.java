@@ -81,14 +81,11 @@ public class MainActivity extends AppCompatActivity {
         Random ra = new Random();
         byte shuffle = (byte) ra.nextInt(size);
 
-        for (int decker = 0; decker < size; decker++) {
             if (!ops.contains(shuffle)) {
-                ops.add(decker, shuffle);
-                break;
+                ops.add(shuffle);
             } else {
                 return randomOptionPicker(size);
             }
-        }
         return shuffle;
     }
 
