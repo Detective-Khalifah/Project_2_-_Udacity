@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox[] checkboxes = {cb0A, cb0B, cb0C, cb0D, cb1A, cb1B, cb1C};
     private EditText editCurrentLang;
     private RadioGroup radGrp0, radGrp1; // RadioGroup references for #Question2 & #Question5
+    private TextView tvWarn1, tvWarn2, tvWarn3, tvWarn4, tvWarn5; // Warning {@link TextView}s
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {
@@ -38,6 +40,12 @@ public class MainActivity extends AppCompatActivity {
 
         radGrp0 = (RadioGroup) findViewById(R.id.rad_grp_lang);
         radGrp1 = (RadioGroup) findViewById(R.id.rad_grp_ide);
+
+        tvWarn1 = (TextView) findViewById(R.id.q1_warning);
+        tvWarn2 = (TextView) findViewById(R.id.q2_warning);
+        tvWarn3 = (TextView) findViewById(R.id.q3_warning);
+        tvWarn4 = (TextView) findViewById(R.id.q4_warning);
+        tvWarn5 = (TextView) findViewById(R.id.q5_warning);
     }
 
     private boolean allQuestionsAnswered() {
