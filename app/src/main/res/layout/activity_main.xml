@@ -55,6 +55,14 @@
             android:paddingLeft="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
+        <TextView
+            android:id="@+id/q1_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="italic"
+            android:visibility="gone" />
 
         <!-- Question 2-->
         <TextView
@@ -104,6 +112,15 @@
 
         </RadioGroup>
 
+        <TextView
+            android:id="@+id/q2_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="italic"
+            android:visibility="gone" />
+
 
         <!-- Question 3-->
         <TextView
@@ -124,6 +141,15 @@
             android:singleLine="true"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             tools:text="J/K" />
+
+        <TextView
+            android:id="@+id/q3_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="italic"
+            android:visibility="gone" />
 
 
         <!-- Question 4-->
@@ -162,6 +188,16 @@
             android:paddingLeft="8dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             tools:text="Mac" />
+
+        <TextView
+            android:id="@+id/q4_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="italic"
+            android:visibility="gone"/>
+
 
         <!-- Question 5-->
         <TextView
@@ -202,6 +238,15 @@
                 android:textColor="#006064" />
 
         </RadioGroup>
+
+        <TextView
+            android:id="@+id/q5_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="italic"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/btn_submit"
