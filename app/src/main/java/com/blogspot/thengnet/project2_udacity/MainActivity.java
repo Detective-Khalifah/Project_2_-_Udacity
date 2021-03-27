@@ -43,9 +43,11 @@ public class MainActivity extends AppCompatActivity {
 
         editCurrentLang = (EditText) findViewById(R.id.edit_lang);
 
-        // Pick {@link CheckBox} from array and assign ID from array of #checkBoxIds
+        // Pick {@link CheckBox}es & {@link RadioButton}s from arrays #checkBoxOptions,
+        // #radioButtonOptions and assign ID from array of #checkBoxIds & #radioButtonIds
         for (int i = 0; i < checkBoxOptions.length; i++) {
             checkBoxOptions[i] = (CheckBox) findViewById(checkBoxId[i]);
+            radioButtonOptions[i] = (RadioButton) findViewById(radioButtonId[i]);
         }
 
         radGrp0 = (RadioGroup) findViewById(R.id.rad_grp_lang);
@@ -69,7 +71,9 @@ public class MainActivity extends AppCompatActivity {
         ops = new ArrayList<>();
 
         for (int a = 0; a < 4; a++) {
-            checkBoxOptions[a].setText(q1Options[randomOptionPicker(4)]);
+            byte pick = randomOptionPicker(4);
+            checkBoxOptions[a].setText(q1Options[pick]);
+            radioButtonOptions[a].setText(q2Options[pick]);
         }
     }
 
