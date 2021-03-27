@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Project 2 - Udacity</string>
+    <string name="q1_label">Question 1: What language/framework could be used in developing an Android application?</string>
+    <string name="q2_label">Question 2: One of these is not a programming language:</string>
+    <string name="q3_label">Question 3: What language is taught at Udacity\'s \"Android Development for Beginners\"?</string>
+    <string name="q4_label">Question 4: Environment setup guide was made at Udacity\'s \"Android Development for Beginners\" for:</string>
+    <string name="q5_label">Question 5: Most used IDE used for developing apps utilising the Android Software Development Kit:</string>
+    <string name="edit_lang_hint">The very first...</string>
+    <string name="btn_submit_text">Submit</string>
 </resources>

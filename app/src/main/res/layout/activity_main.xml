@@ -1,18 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+        <!-- Question 1-->
+        <TextView
+            android:id="@+id/q1_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/q1_label"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cb0_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text="..."/>
+
+        <CheckBox
+            android:id="@+id/cb0_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <CheckBox
+            android:id="@+id/cb0_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <CheckBox
+            android:id="@+id/cb0_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+        <!-- Question 2-->
+        <TextView
+            android:id="@+id/q2_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/q2_label"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rad-grp_lang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:showDividers="end">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#006064"
+                tools:text="HTML"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#006064" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#006064" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#006064" />
+
+        </RadioGroup>
+
+
+        <!-- Question 3-->
+        <TextView
+            android:id="@+id/q3_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/q3_label"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_lang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+            android:hint="@string/edit_lang_hint"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text="J/K"/>
+
+
+        <!-- Question 4-->
+        <TextView
+            android:id="@+id/q4_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/q4_label"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cb1_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text="J2ME"/>
+
+        <CheckBox
+            android:id="@+id/cb1_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text="Linux"/>
+
+        <CheckBox
+            android:id="@+id/cb1_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text="Mac"/>
+
+        <!-- Question 5-->
+        <TextView
+            android:id="@+id/q5_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/q5_label"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rad-grp_ide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:showDividers="end">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#006064" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#006064" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#006064" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_submit_text"/>
+    </LinearLayout>
+
+</ScrollView>
