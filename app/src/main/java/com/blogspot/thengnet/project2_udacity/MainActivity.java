@@ -3,6 +3,7 @@ package com.blogspot.thengnet.project2_udacity;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -49,32 +50,60 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean allQuestionsAnswered() {
+        boolean questionUnanswered = false;
+
+        // TODO: Make any of the checks return false - as method return value - immediately a Q is
+        //  found unanswered.
+
+        // Check if any {@link CheckBox} in Question 1 has been checked; break out of the check, and
+        // check other Questions' options, otherwise make #tvWarn1 visible and set
+        // #questionUnanswered to true.
+        for (int cb0 = 0; cb0 < 4; cb0++) {
+            if (checkboxes[cb0].isChecked())
+                break;
+            else {
+                tvWarn1.setVisibility(View.VISIBLE);
+                questionUnanswered = true;
+            }
+        }
+
+        // Check if any {@link RadioButton} in Question 2's {@link RadioGroup} has been checked;
+        // check other Questions' options if that is the case, otherwise set #questionUnanswered to
+        // true & return it's opposite value - false - immediately, and make #tvWarn2 visible.
         if (radGrp0.getCheckedRadioButtonId() == -1) {
-
-            return false;
+            tvWarn2.setVisibility(View.VISIBLE);
+            questionUnanswered = true;
         }
 
-        if (radGrp1.getCheckedRadioButtonId() == -1) {
-
-            return false;
-        }
-
+        // Check if the {@link EditText} in Question 3 is empty; make #tvWarn1 visible & set
+        // #questionAnswered to true, if that is the case, otherwise check other Questions' options.
         if (editCurrentLang.getText().toString().equals("")) {
             editCurrentLang.setHint(getText(R.string.edit_empty));
             editCurrentLang.setHintTextColor(Color.RED);
-            return false;
+            tvWarn3.setVisibility(View.VISIBLE);
+            questionUnanswered = true;
         }
 
-        for (int cb0 = 0; cb0 < 4; cb0++) {
-            if (!checkboxes[cb0].isChecked())
-                return false;
-        }
-
+        // Check if any {@link CheckBox} in Question 4 has been checked; break out of the check, and
+        // check other Questions' options, otherwise make #tvWarn4 visible and set
+        // #questionUnanswered to true.
         for (int cb1 = 4; cb1 < checkboxes.length; cb1++) {
-            if (!checkboxes[cb1].isChecked())
-                return false;
+            if (checkboxes[cb1].isChecked())
+                break;
+            else {
+                questionUnanswered = true;
+                tvWarn4.setVisibility(View.VISIBLE);
+            }
         }
 
-        return true;
+        // Check if any {@link RadioButton} in Question 5's {@link RadioGroup} has been checked;
+        // check other Questions' options if that is the case, otherwise set #questionUnanswered to
+        // true & return it's opposite value - false - immediately, and make #tvWarn5 visible.
+        if (radGrp1.getCheckedRadioButtonId() == -1) {
+            tvWarn5.setVisibility(View.VISIBLE);
+            questionUnanswered = true;
+        }
+
+        return !questionUnanswered;
     }
 }
