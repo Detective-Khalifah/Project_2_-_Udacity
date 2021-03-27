@@ -82,6 +82,7 @@
             android:showDividers="end">
 
             <RadioButton
+                android:id="@+id/rb0_a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
@@ -90,6 +91,7 @@
                 tools:text="HTML" />
 
             <RadioButton
+                android:id="@+id/rb0_b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
@@ -97,6 +99,7 @@
                 android:textColor="#006064" />
 
             <RadioButton
+                android:id="@+id/rb0_c"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
@@ -104,6 +107,8 @@
                 android:textColor="#006064" />
 
             <RadioButton
+
+                android:id="@+id/rb0_d"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
@@ -217,6 +222,7 @@
             android:showDividers="end">
 
             <RadioButton
+                android:id="@+id/rb1_a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
@@ -224,6 +230,7 @@
                 android:textColor="#006064" />
 
             <RadioButton
+                android:id="@+id/rb1_b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
@@ -231,6 +238,7 @@
                 android:textColor="#006064" />
 
             <RadioButton
+                android:id="@+id/rb1_c"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
