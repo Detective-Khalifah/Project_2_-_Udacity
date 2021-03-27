@@ -75,7 +75,7 @@
             android:textStyle="bold" />
 
         <RadioGroup
-            android:id="@+id/rad-grp_lang"
+            android:id="@+id/rad_grp_lang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scrollbars="horizontal"
@@ -196,7 +196,7 @@
             android:fontFamily="sans-serif-light"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="italic"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
 
         <!-- Question 5-->
@@ -210,7 +210,7 @@
             android:textStyle="bold" />
 
         <RadioGroup
-            android:id="@+id/rad-grp_ide"
+            android:id="@+id/rad_grp_ide"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scrollbars="horizontal"
