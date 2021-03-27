@@ -7,4 +7,27 @@
     <string name="q5_label">Question 5: Most used IDE used for developing apps utilising the Android Software Development Kit:</string>
     <string name="edit_lang_hint">The very first...</string>
     <string name="btn_submit_text">Submit</string>
+
+    <!-- Question 1 options -->
+    <string name="q1_op0">Java (for Android)</string>
+    <string name="q1_op1">JavaScript</string>
+    <string name="q1_op2">Kotlin</string>
+    <string name="q1_op3">React Native</string>
+
+    <!-- Question 2 options -->
+    <string name="q2_op0">HTML</string>
+    <string name="q2_op1">Python</string>
+    <string name="q2_op2">Java</string>
+    <string name="q2_op3">C#</string>
+
+    <!-- Question 4 options -->
+    <string name="q4_op0">Linux</string>
+    <string name="q4_op1">Macintosh</string>
+    <string name="q4_op2">Windows</string>
+
+    <!-- Question 5 options -->
+    <string name="q5_op0">Android Studio</string>
+    <string name="q5_op1">Eclipse for Java Developers</string>
+    <string name="q5_op2">NetBeans IDE</string>
+
 </resources>
