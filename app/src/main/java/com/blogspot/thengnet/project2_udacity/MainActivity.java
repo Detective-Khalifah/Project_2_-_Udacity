@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
@@ -20,12 +21,16 @@ public class MainActivity extends AppCompatActivity {
     private int trav = 0;
     ArrayList<Byte> ops;
 
-    private Button btnSubmit;
     private CheckBox cb0A, cb0B, cb0C, cb0D, // CheckBoxes for #Question 1
-        cb1A, cb1B, cb1C; // CheckBoxes for #Question 4
-    private CheckBox[] checkboxes = {cb0A, cb0B, cb0C, cb0D, cb1A, cb1B, cb1C};
-    private EditText editCurrentLang;
+    cb1A, cb1B, cb1C; // CheckBoxes for #Question 4
+    private CheckBox[] checkBoxOptions = {cb0A, cb0B, cb0C, cb0D, cb1A, cb1B, cb1C};
+    private RadioButton rb0A, rb0B, rb0C, rb0D, // RadioButtons for #Question 2
+    rb1A, rb1B, rb1C; // RadioButtons for #Question 5
+    private RadioButton[] radioButtonOptions = {rb0A, rb0B, rb0C, rb0D, rb1A, rb1B, rb1C};
     private RadioGroup radGrp0, radGrp1; // RadioGroup references for #Question2 & #Question5
+
+    private Button btnSubmit;
+    private EditText editCurrentLang;
     private TextView tvWarn1, tvWarn2, tvWarn3, tvWarn4, tvWarn5; // Warning {@link TextView}s
 
     @Override
@@ -38,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
         editCurrentLang = (EditText) findViewById(R.id.edit_lang);
 
         // Pick {@link CheckBox} from array and assign ID from array of #checkBoxIds
-        for (int i = 0; i < checkboxes.length; i++) {
-            checkboxes[i] = (CheckBox) findViewById(checkBoxId[i]);
+        for (int i = 0; i < checkBoxOptions.length; i++) {
+            checkBoxOptions[i] = (CheckBox) findViewById(checkBoxId[i]);
         }
 
         radGrp0 = (RadioGroup) findViewById(R.id.rad_grp_lang);
@@ -57,11 +62,13 @@ public class MainActivity extends AppCompatActivity {
     private void setupOptions() {
         String[] q1Options = new String[]{getString(R.string.q1_op0), getString(R.string.q1_op1),
                 getString(R.string.q1_op2), getString(R.string.q1_op3)};
+        String[] q2Options = {getString(R.string.q2_op0), getString(R.string.q2_op1),
+                getString(R.string.q2_op2), getString(R.string.q2_op3)};
 
         ops = new ArrayList<>();
 
-        for (int i = 0; i < 4; i++) {
-            checkboxes[i].setText(q1Options[randomOptionPicker(4)]);
+        for (int a = 0; a < 4; a++) {
+            checkBoxOptions[a].setText(q1Options[randomOptionPicker(4)]);
         }
     }
 
@@ -90,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         // check other Questions' options, otherwise make #tvWarn1 visible and set
         // #questionUnanswered to true.
         for (int cb0 = 0; cb0 < 4; cb0++) {
-            if (checkboxes[cb0].isChecked())
+            if (checkBoxOptions[cb0].isChecked())
                 break;
             else {
                 tvWarn1.setVisibility(View.VISIBLE);
@@ -118,8 +125,8 @@ public class MainActivity extends AppCompatActivity {
         // Check if any {@link CheckBox} in Question 4 has been checked; break out of the check, and
         // check other Questions' options, otherwise make #tvWarn4 visible and set
         // #questionUnanswered to true.
-        for (int cb1 = 4; cb1 < checkboxes.length; cb1++) {
-            if (checkboxes[cb1].isChecked())
+        for (int cb1 = 4; cb1 < checkBoxOptions.length; cb1++) {
+            if (checkBoxOptions[cb1].isChecked())
                 break;
             else {
                 questionUnanswered = true;
