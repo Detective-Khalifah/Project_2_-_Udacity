@@ -29,27 +29,15 @@
 
         <CheckBox
             android:id="@+id/cb0_b"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="8dp"
-            android:paddingLeft="8dp"
-            android:textSize="18sp" />
+            style="@style/CheckBoxMetrics" />
 
         <CheckBox
             android:id="@+id/cb0_c"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="8dp"
-            android:paddingLeft="8dp"
-            android:textSize="18sp" />
+            style="@style/CheckBoxMetrics"/>
 
         <CheckBox
             android:id="@+id/cb0_d"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="8dp"
-            android:paddingLeft="8dp"
-            android:textSize="18sp" />
+            style="@style/CheckBoxMetrics"/>
 
         <TextView
             android:id="@+id/q1_warning"
@@ -156,29 +144,17 @@
 
         <CheckBox
             android:id="@+id/cb1_a"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="8dp"
-            android:paddingLeft="8dp"
-            android:textSize="18sp"
+            style="@style/CheckBoxMetrics"
             tools:text="J2ME" />
 
         <CheckBox
             android:id="@+id/cb1_c"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="8dp"
-            android:paddingLeft="8dp"
-            android:textSize="18sp"
+            style="@style/CheckBoxMetrics"
             tools:text="Linux" />
 
         <CheckBox
             android:id="@+id/cb1_b"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="8dp"
-            android:paddingLeft="8dp"
-            android:textSize="18sp"
+            style="@style/CheckBoxMetrics"
             tools:text="Mac" />
 
         <TextView
