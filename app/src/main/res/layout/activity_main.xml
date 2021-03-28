@@ -20,11 +20,7 @@
 
         <CheckBox
             android:id="@+id/cb0_a"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingStart="8dp"
-            android:paddingLeft="8dp"
-            android:textSize="18sp"
+            style="@style/CheckBoxMetrics"
             tools:text="..." />
 
         <CheckBox
@@ -61,18 +57,15 @@
 
             <RadioButton
                 android:id="@+id/rb0_b"
-                style="@style/RadioButtonMetrics"
-                android:textSize="18sp" />
+                style="@style/RadioButtonMetrics" />
 
             <RadioButton
                 android:id="@+id/rb0_c"
-                style="@style/RadioButtonMetrics"
-                android:textSize="18sp" />
+                style="@style/RadioButtonMetrics" />
 
             <RadioButton
                 android:id="@+id/rb0_d"
-                style="@style/RadioButtonMetrics"
-                android:textSize="18sp" />
+                style="@style/RadioButtonMetrics" />
 
         </RadioGroup>
 
@@ -111,18 +104,15 @@
 
         <CheckBox
             android:id="@+id/cb1_a"
-            style="@style/CheckBoxMetrics"
-            tools:text="J2ME" />
+            style="@style/CheckBoxMetrics" />
 
         <CheckBox
             android:id="@+id/cb1_c"
-            style="@style/CheckBoxMetrics"
-            tools:text="Linux" />
+            style="@style/CheckBoxMetrics" />
 
         <CheckBox
             android:id="@+id/cb1_b"
-            style="@style/CheckBoxMetrics"
-            tools:text="Mac" />
+            style="@style/CheckBoxMetrics" />
 
         <TextView
             android:id="@+id/q4_warning"
