@@ -15,13 +15,8 @@
         <!-- Question 1-->
         <TextView
             android:id="@+id/q1_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
-            android:text="@string/q1_label"
-            android:textColor="#000000"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+            style="@style/QuestionTextView"
+            android:text="@string/q1_label" />
 
         <CheckBox
             android:id="@+id/cb0_a"
@@ -69,13 +64,8 @@
         <!-- Question 2-->
         <TextView
             android:id="@+id/q2_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
-            android:text="@string/q2_label"
-            android:textColor="#000000"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+            style="@style/QuestionTextView"
+            android:text="@string/q2_label" />
 
         <RadioGroup
             android:id="@+id/rad_grp_lang"
@@ -89,8 +79,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
-                android:textSize="18sp"
                 android:textColor="#006064"
+                android:textSize="18sp"
                 tools:text="HTML" />
 
             <RadioButton
@@ -98,16 +88,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
-                android:textSize="18sp"
-                android:textColor="#006064" />
+                android:textColor="#006064"
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/rb0_c"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
-                android:textSize="18sp"
-                android:textColor="#006064" />
+                android:textColor="#006064"
+                android:textSize="18sp" />
 
             <RadioButton
 
@@ -115,8 +105,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
-                android:textSize="18sp"
-                android:textColor="#006064" />
+                android:textColor="#006064"
+                android:textSize="18sp" />
 
         </RadioGroup>
 
@@ -134,13 +124,8 @@
         <!-- Question 3-->
         <TextView
             android:id="@+id/q3_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
-            android:text="@string/q3_label"
-            android:textColor="#000000"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+            style="@style/QuestionTextView"
+            android:text="@string/q3_label" />
 
         <EditText
             android:id="@+id/edit_lang"
@@ -166,13 +151,8 @@
         <!-- Question 4-->
         <TextView
             android:id="@+id/q4_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
-            android:text="@string/q4_label"
-            android:textColor="#000000"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+            style="@style/QuestionTextView"
+            android:text="@string/q4_label" />
 
         <CheckBox
             android:id="@+id/cb1_a"
@@ -215,13 +195,8 @@
         <!-- Question 5-->
         <TextView
             android:id="@+id/q5_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
-            android:text="@string/q5_label"
-            android:textColor="#000000"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+            style="@style/QuestionTextView"
+            android:text="@string/q5_label" />
 
         <RadioGroup
             android:id="@+id/rad_grp_ide"
@@ -235,24 +210,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
-                android:textSize="18sp"
-                android:textColor="#006064" />
+                android:textColor="#006064"
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/rb1_b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
-                android:textSize="18sp"
-                android:textColor="#006064" />
+                android:textColor="#006064"
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/rb1_c"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
-                android:textSize="18sp"
-                android:textColor="#006064" />
+                android:textColor="#006064"
+                android:textSize="18sp" />
 
         </RadioGroup>
 
