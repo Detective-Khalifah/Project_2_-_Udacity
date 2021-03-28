@@ -33,11 +33,11 @@
 
         <CheckBox
             android:id="@+id/cb0_c"
-            style="@style/CheckBoxMetrics"/>
+            style="@style/CheckBoxMetrics" />
 
         <CheckBox
             android:id="@+id/cb0_d"
-            style="@style/CheckBoxMetrics"/>
+            style="@style/CheckBoxMetrics" />
 
         <TextView
             android:id="@+id/q1_warning"
@@ -58,42 +58,26 @@
         <RadioGroup
             android:id="@+id/rad_grp_lang"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbars="horizontal"
-            android:showDividers="end">
+            android:layout_height="wrap_content">
 
             <RadioButton
                 android:id="@+id/rb0_a"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed-light"
-                android:textColor="#006064"
-                android:textSize="18sp"
+                style="@style/RadioButtonMetrics"
                 tools:text="HTML" />
 
             <RadioButton
                 android:id="@+id/rb0_b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed-light"
-                android:textColor="#006064"
+                style="@style/RadioButtonMetrics"
                 android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/rb0_c"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed-light"
-                android:textColor="#006064"
+                style="@style/RadioButtonMetrics"
                 android:textSize="18sp" />
 
             <RadioButton
-
                 android:id="@+id/rb0_d"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed-light"
-                android:textColor="#006064"
+                style="@style/RadioButtonMetrics"
                 android:textSize="18sp" />
 
         </RadioGroup>
@@ -177,33 +161,19 @@
         <RadioGroup
             android:id="@+id/rad_grp_ide"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbars="horizontal"
-            android:showDividers="end">
+            android:layout_height="wrap_content">
 
             <RadioButton
                 android:id="@+id/rb1_a"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed-light"
-                android:textColor="#006064"
-                android:textSize="18sp" />
+                style="@style/RadioButtonMetrics" />
 
             <RadioButton
                 android:id="@+id/rb1_b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed-light"
-                android:textColor="#006064"
-                android:textSize="18sp" />
+                style="@style/RadioButtonMetrics" />
 
             <RadioButton
                 android:id="@+id/rb1_c"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed-light"
-                android:textColor="#006064"
-                android:textSize="18sp" />
+                style="@style/RadioButtonMetrics" />
 
         </RadioGroup>
 
