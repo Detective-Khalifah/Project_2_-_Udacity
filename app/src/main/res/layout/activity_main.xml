@@ -41,7 +41,7 @@
 
         <TextView
             android:id="@+id/q1_warning"
-            style="@style/WarningTextViews"/>
+            style="@style/WarningTextViews" />
 
         <!-- Question 2-->
         <TextView
@@ -93,6 +93,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-condensed-light"
             android:hint="@string/edit_lang_hint"
+            android:inputType="textCapCharacters"
             android:singleLine="true"
             android:textSize="18sp"
             tools:text="J/K" />
