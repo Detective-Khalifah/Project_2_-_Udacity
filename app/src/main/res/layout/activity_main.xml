@@ -19,7 +19,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
             android:text="@string/q1_label"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <CheckBox
@@ -28,7 +29,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="8dp"
             android:paddingLeft="8dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="18sp"
             tools:text="..." />
 
         <CheckBox
@@ -37,7 +38,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="8dp"
             android:paddingLeft="8dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            android:textSize="18sp" />
 
         <CheckBox
             android:id="@+id/cb0_c"
@@ -45,7 +46,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="8dp"
             android:paddingLeft="8dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            android:textSize="18sp" />
 
         <CheckBox
             android:id="@+id/cb0_d"
@@ -53,7 +54,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="8dp"
             android:paddingLeft="8dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/q1_warning"
@@ -72,7 +73,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
             android:text="@string/q2_label"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <RadioGroup
@@ -87,7 +89,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp"
                 android:textColor="#006064"
                 tools:text="HTML" />
 
@@ -96,7 +98,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp"
                 android:textColor="#006064" />
 
             <RadioButton
@@ -104,7 +106,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp"
                 android:textColor="#006064" />
 
             <RadioButton
@@ -113,7 +115,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp"
                 android:textColor="#006064" />
 
         </RadioGroup>
@@ -136,7 +138,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
             android:text="@string/q3_label"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <EditText
@@ -146,7 +149,7 @@
             android:fontFamily="sans-serif-condensed-light"
             android:hint="@string/edit_lang_hint"
             android:singleLine="true"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="18sp"
             tools:text="J/K" />
 
         <TextView
@@ -167,7 +170,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
             android:text="@string/q4_label"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <CheckBox
@@ -176,7 +180,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="8dp"
             android:paddingLeft="8dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="18sp"
             tools:text="J2ME" />
 
         <CheckBox
@@ -185,7 +189,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="8dp"
             android:paddingLeft="8dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="18sp"
             tools:text="Linux" />
 
         <CheckBox
@@ -194,7 +198,7 @@
             android:layout_height="wrap_content"
             android:paddingStart="8dp"
             android:paddingLeft="8dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="18sp"
             tools:text="Mac" />
 
         <TextView
@@ -215,7 +219,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
             android:text="@string/q5_label"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <RadioGroup
@@ -230,7 +235,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp"
                 android:textColor="#006064" />
 
             <RadioButton
@@ -238,7 +243,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp"
                 android:textColor="#006064" />
 
             <RadioButton
@@ -246,7 +251,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed-light"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp"
                 android:textColor="#006064" />
 
         </RadioGroup>
