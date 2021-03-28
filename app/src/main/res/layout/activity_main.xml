@@ -60,9 +60,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
+            android:text="@string/warning"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="italic"
-            android:visibility="gone" />
+            android:visibility="invisible" />
 
         <!-- Question 2-->
         <TextView
@@ -122,9 +123,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
+            android:text="@string/warning"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="italic"
-            android:visibility="gone" />
+            android:visibility="invisible" />
 
 
         <!-- Question 3-->
@@ -152,9 +154,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
+            android:text="@string/warning"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="italic"
-            android:visibility="gone" />
+            android:visibility="invisible" />
 
 
         <!-- Question 4-->
@@ -199,9 +202,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
+            android:text="@string/warning"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="italic"
-            android:visibility="gone" />
+            android:visibility="invisible" />
 
 
         <!-- Question 5-->
@@ -252,9 +256,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
+            android:text="@string/warning"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="italic"
-            android:visibility="gone" />
+            android:visibility="invisible" />
 
         <Button
             android:id="@+id/btn_submit"

@@ -31,5 +31,6 @@
 
     <string name="edit_lang_hint">The very first...</string>
     <string name="edit_empty">You have to type an answer!</string>
+    <string name="warning">Question not answered!</string>
 
 </resources>
