@@ -41,13 +41,7 @@
 
         <TextView
             android:id="@+id/q1_warning"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:text="@string/warning"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="italic"
-            android:visibility="invisible" />
+            style="@style/WarningTextViews"/>
 
         <!-- Question 2-->
         <TextView
@@ -84,13 +78,7 @@
 
         <TextView
             android:id="@+id/q2_warning"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:text="@string/warning"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="italic"
-            android:visibility="invisible" />
+            style="@style/WarningTextViews" />
 
 
         <!-- Question 3-->
@@ -111,13 +99,7 @@
 
         <TextView
             android:id="@+id/q3_warning"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:text="@string/warning"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="italic"
-            android:visibility="invisible" />
+            style="@style/WarningTextViews" />
 
 
         <!-- Question 4-->
@@ -143,13 +125,7 @@
 
         <TextView
             android:id="@+id/q4_warning"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:text="@string/warning"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="italic"
-            android:visibility="invisible" />
+            style="@style/WarningTextViews" />
 
 
         <!-- Question 5-->
@@ -179,13 +155,7 @@
 
         <TextView
             android:id="@+id/q5_warning"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-light"
-            android:text="@string/warning"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="italic"
-            android:visibility="invisible" />
+            style="@style/WarningTextViews" />
 
         <Button
             android:id="@+id/btn_submit"
